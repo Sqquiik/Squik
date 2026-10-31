@@ -39,6 +39,9 @@ h1,h2,h3{font-family:'Pixelify Sans','Courier New',monospace;margin:0;font-weigh
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
 .chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
 .chips li{background:var(--peach);border:3px solid var(--indigo);padding:2px 12px}
+.chips li:has(a):hover{background:var(--yellow)}
+.chips a{display:block;margin:-2px -12px;padding:2px 12px;color:inherit;text-decoration:none}
+.chips a:focus-visible{outline:3px solid var(--indigo-d)}
 .links{display:grid;gap:12px}
 .btn{display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:#fff;background:var(--indigo);
   padding:8px 14px;border:3px solid var(--indigo-d);box-shadow:4px 4px 0 var(--indigo-d);font-family:'Pixelify Sans',monospace;font-size:20px}
@@ -100,7 +103,7 @@ footer{text-align:center;color:#fff;font-size:20px}
   <section class="win">
     <header>Jeux <i>✕</i></header>
     <div class="body">
-      <ul class="chips"><li>Overwatch</li><li>World of Warcraft</li><li>The Finals</li><li>Borderlands</li><li>League of Legends</li><li>Rocket League</li><li>Enshrouded</li><li>Path of Exile 2</li></ul>
+      <ul class="chips"><li><a href="https://overwatch.blizzard.com" target="_blank" rel="noopener noreferrer">Overwatch</a></li><li><a href="https://worldofwarcraft.blizzard.com" target="_blank" rel="noopener noreferrer">World of Warcraft</a></li><li><a href="https://www.reachthefinals.com" target="_blank" rel="noopener noreferrer">The Finals</a></li><li><a href="https://borderlands.com" target="_blank" rel="noopener noreferrer">Borderlands</a></li><li><a href="https://www.leagueoflegends.com" target="_blank" rel="noopener noreferrer">League of Legends</a></li><li><a href="https://www.rocketleague.com" target="_blank" rel="noopener noreferrer">Rocket League</a></li><li><a href="https://enshrouded.com" target="_blank" rel="noopener noreferrer">Enshrouded</a></li><li><a href="https://pathofexile2.com" target="_blank" rel="noopener noreferrer">Path of Exile 2</a></li></ul>
     </div>
   </section>
   <section class="win">
